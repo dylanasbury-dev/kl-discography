@@ -91,30 +91,4 @@ opacity: 0;}
 to{transform:translatey(0) scale(1);}
 }
 
-@media(max-width: 480px) 
-.content{ padding: 10vh 5vw;}
-.content p1{font-size: 8vw;}
-.content p2{font-size: 6vw;}
-.content p3{font-size: 6vw;}
-.content card{flex-direction: row;
-padding:10vh 5vw;}
-.content links{padding:8vh 3vw
-}
-.content pro{flex-direction:row; 
-padding: 6vh 4vw}
-.content img{ 5vw 4vh}
-
-@media(max-width: 768px) 
-.content{ padding: 8vh 3vw;}
-.content p1{font-size: 6vw;}
-.content p2{font-size: 4vw;}
-.content p3{font-size: 4vw;}
-.content card{flex-direction: row;
-padding:8vh 3vw;}
-.content links{padding:6vh 3vw
-}
-.content pro{flex-direction:row; 
-padding: 6vh 4vw}
-.content img{ 5vw 4vh}
-
-
+gi
