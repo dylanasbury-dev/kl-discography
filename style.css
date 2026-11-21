@@ -1,93 +1,613 @@
 body{
-background-color: #EDE5CC;}
+
+}
+.nav{
+border: black solid 0.002rem;
+display: flex;
+background: linear-gradient(135deg, #DBCE95, #EBE4D3);
+}
+
+
+
+.nav__logo{
+margin-inline: 1rem;
+color:black;
+font-size: clamp(1.2rem, 4vw, 1.7rem);
+border: 0.2rem #DBCE95 solid;
+border-radius: 80%;
+padding: 1.5rem 1rem;
+box-shadow: 0 0.3rem 0.3rem ;
+line-height: 2rem;
+}
+
+.nav__span{
+color:black;
+margin-left: 2.4rem;
+font-size: clamp(1.2rem, 4vw, 1.2rem);
+letter-spacing: 0.1rem;
+}
+
+.nav__links{
+margin-left: 7rem;
+margin-top: 3rem;
+}
+
+.nav__list{
+display:flex;
+gap: 1.4rem ;
+list-style-type:none;
+}
+
+a{
+text-decoration: none;
+color:black;
+font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+transition: 1s ease-out;
+}
+
+a:hover{
+text-decoration: underline 0.15rem;
+text-underline-offset: 0.5rem;
+}
+
+
+.contaner{
+margin: 80px;
+}
+
+.row{
+display: flex;
+margin: 60px;
+}
+
+/*
+HEADER
+*/
+
+.header{
+border: solid, black, 0.002rem;
+  height: auto;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1.7) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(235, 226, 226, 0) 100%),url(./Assets/KendrickSZASPurs230725-21_\(headshot\).jpg);
+ background-position: center;
+}
+
+
 
 .h1{
-font-size: 43px;
+background:linear-gradient(90deg, #bdb075, white);
+background-clip: text;
+color: transparent;
 text-align: center;
-font-family: lobster, cursive;
-color:black;
-Margin: 20px 20px;
-padding: 30px;
-animation: fade-Up 1s ease-Out;
+font-size: clamp(1.5rem, 10vw, 3.2rem);
+
 }
 
-.p1 {
-text-align: center;
-font-size: 28px;
-font-weight:700;
-animation:fade-Up 2s ease-Out;
+.header__para{
+background:linear-gradient(90deg, #bdb075, white);
+background-clip: text;
+color: transparent;
+font-size: clamp(1.2rem, 4vw, 2rem);
+text-indent: 3%;
+padding: 1rem;
 }
 
-.p2{
-font-size: 22px;
-text-indent:40px;
-animation: 2s  fade-Up ease-Out;
+/*
+section-80
+*/
+
+#section-80{
+background-image: linear-gradient(120deg, black, #bdb075, #fff);
+border: solid transparent 0.024rem;
 }
 
-.card {
-position:relative;
-display:inline-block;
-margin:0 auto;
-box-shadow: 0 10px, 10px;
-left: 500px;
-max-width: 75%;
-height:auto;
-border:solid,black,4px;
-top: 70px;
-cursor:pointer;
-box-shadow: 0 30px 30px;
-transition:transform 0.5s;
-animation: fade-Up 2s;
+
+.section__80--img--wrapper{
+width: 40%;
+height: auto;
 }
 
-.badge{
-position:absolute;
-right: 0px;
-bottom:623px;
-background-color: Black;
-color:white;
-font-size: 25px;}
-
-img{
-max-width: 1000%;
-height:90%;
+.section__80--img{
+width: clamp(200px, 100%, 640px);
+height: auto;
+transition: 0.5s ease-out;
+box-shadow:  0px 1rem 1rem;
 }
 
-.card:hover{
-transform:translateY(-15px);}
-
-.p3 {
-font-weight: 700;
-text-align: center;
-top:20px;
-font-size: 28px;
+.section__80--img:hover{
+  transform: translateY(-1rem);
+  box-shadow:  0px 1rem 1rem 1rem #e9e0c7;
 }
 
-.links{
-height: 400px;
-border: solid black 4px;
-margin-top: 350px;
-padding: 60x;
+.section__80--text--wrapper{
+width: 60%;
+margin-left: 1.2rem;
+border: 0.2rem, transparent solid;
+border-image: linear-gradient(to right, #e9e0c7, #bdb075) 1;
 }
 
-.pro{
-display:flex;
+
+.section__80--header{
+margin-inline: 1rem;
+font-size: clamp(2rem, 2.5rem, 2.7rem);
+color:#271814;
+}
+
+
+.section__80--para{
+text-indent: 3%;
+margin-inline: 1rem;
+font-size: clamp(1rem, 1.2rem, 1.25rem);
+font-weight: 600;
+color:#271814;
+}
+
+.section__80--ms{
+margin-inline: 1rem;
+font-size: clamp(1.2rem, 1.5rem, 1.5rem);
+color:#271814;
+}
+.section__80--list{
+list-style-type:none;
+}
+
+.li-80{
+  font-size: clamp(1.4rem, 1.8rem, 2.2rem);
+  color:#271814;
+}
+
+.songs-80{
+  font-size: clamp(0.8rem, 1.5rem, 1.6rem);
+  color:#271814;
+}
+
+@media(max-width:1148px) {
+  .row{
+display: flex;
+flex-direction: column;
 align-items: center;
-height: 80%;
-margin-top: 20px;
-padding: 8px;
-gap: 107px;
-transition:transform 0.5s;
+  } 
+
+  .section-__80--img{
+  margin-bottom: 1rem;
+  }
+
+  .section__80--img--wrapper{
+width: 70%;
+height: auto;
+  }
+
+.section__80--text--wrapper{
+  width: 100%;
+  margin-top: 1.5rem;
 }
 
-.pro:hover{
-transform:translatey(-10px);
 }
 
-@keyframes fade-Up{
-from{transform:translatey(-40px) scale(0.8); 
-opacity: 0;}
+/*
+gkmc
+*/
 
-to{transform:translatey(0) scale(1);}
+#gkmc{
+background-image: linear-gradient(180deg, #1C4A6B 9%, #65A4C3 40%, #321f1a 48%, #5d7565 90%) ;
+border: solid, 0.2rem, #d1d3ca;
 }
 
+.gkmc__row{
+display: flex;
+margin: 60px;
+}
+
+.gkmc__img--wrapper{
+width: 45%;
+}
+
+.gkmc__img{
+width: clamp(200px, 100%, 640px);
+height:auto;
+transition: 0.5s ease-out;
+box-shadow: 0rem 1rem 1rem #d1d3ca;
+}
+
+.gkmc__img:hover{
+  transform: translateY(-1rem);
+  box-shadow: 0rem 1.2rem 1.2rem 1.2rem #321f1a;
+  cursor: pointer;
+}
+
+.gkmc__text--wrapper{
+width: 55%;
+margin-right: 1.1rem; 
+border: 0.2rem solid #d1d3ca;
+}
+
+
+.gkmc__header{
+color: #d1d3ca;
+margin-inline: 1rem;
+font-size: clamp(2rem, 2.5rem, 2.7rem);
+font-family: "dancing script", cursive;
+}
+
+
+.gkmc__para{
+color: #d1d3ca;
+text-indent: 3%;
+margin-inline: 1rem;
+font-size: clamp(1rem, 1.2rem, 1.25rem);
+font-weight: 600;
+font-family: "dancing script", cursive;
+}
+
+.gkmc__ms{
+color: #d1d3ca;
+margin-inline: 1rem;
+font-size: clamp(1.2rem, 1.5rem, 1.5rem);
+font-family: "dancing script", cursive;
+}
+.gkmc__list{
+list-style-type:none;
+}
+
+.li{
+list-style-type:none;
+color: #d1d3ca;
+font-size: clamp(1.4rem, 1.8rem, 2.2rem);
+font-family: "dancing script", cursive;
+}
+
+.songs__gkmc{
+color:#d1d3ca;
+font-size: clamp(0.8rem, 1.5rem, 1.6rem);
+font-family: "dancing script", cursive;
+}
+
+@media(max-width:1148px) {
+  .gkmc__row{
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+margin: 60px;
+  } 
+
+  .gkmc__img{
+  margin-bottom: 1rem;
+  }
+
+  .gkmc__img--wrapper{
+width: 80%;
+height: auto;
+  }
+
+.gkmc__text--wrapper{
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+}
+
+/*
+tpab
+*/
+
+#tpab{
+background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(235, 226, 226, 0) 100%), url(./Assets/tpab-alt.jpg);
+border: solid 0.2rem #BEBBBB;
+}
+
+
+.tpab__img--wrapper{
+width: 45%;
+}
+
+.tpab__img{
+width: clamp(200px, 100%, 640px);
+height:auto;
+transition: 0.5s ease-out;
+}
+
+.tpab__img:hover{
+transform: translateY(-1rem);
+box-shadow: 0rem 1.2rem 1.2rem 1.2rem #E3E317;
+cursor: pointer;
+}
+
+.tpab__text--wrapper{
+width: 55%;
+margin-left: 1.8rem;
+border: 0.2rem #BEBBBB solid;
+}
+
+
+.tpab__header{
+margin-inline: 1rem;
+font-size: clamp(2rem, 2.5rem, 2.7rem);
+color: #E3E317;
+font-weight: 100;
+font-family: "brush scipt MT", "segoe script", cursive;
+}
+
+
+.tpab__para{
+text-indent: 3%;
+margin-inline: 1rem;
+font-size: clamp(1rem, 1.2rem, 1.25rem);
+font-weight: 700;
+color: #E3E317;
+font-family: brush scipt MT, segoe script, cursive;
+}
+
+.tpab__ms{
+margin-inline: 1rem;
+font-size: clamp(1.2rem, 1.5rem, 1.5rem);
+color: #E3E317;
+font-weight: 100;
+font-family: "brush scipt MT", "segoe script", cursive;
+}
+.tpab__list{
+list-style-type:none;
+}
+
+.li__tpab{
+font-size: clamp(1.4rem, 1.8rem, 2.2rem);
+color: #E3E317;
+font-weight: 100;
+font-family: "brush scipt MT", "segoe script", cursive;
+}
+
+.songs__tpab{
+font-size: clamp(0.8rem, 1.5rem, 1.6rem);
+color: #E3E317;
+font-weight: 100;
+font-family: "brush scipt MT", "segoe script", cursive;
+}
+
+@media(max-width:1148px) {
+  .row{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 60px;
+  } 
+
+  .tpab__img{
+  margin-bottom: 1rem;
+  }
+
+  .tpab__img--wrapper{
+width: 80%;
+height: auto;
+  }
+
+.tpab__text--wrapper{
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+}
+
+/*
+DAMN
+*/
+
+#DAMN{
+border: solid black 0.2rem;
+}
+
+
+.DAMN__img--wrapper{
+width: 45%;
+}
+
+.DAMN__img{
+width: clamp(200px, 100%, 640px);
+height:auto;
+transition: 0.5s ease-out;
+}
+
+.DAMN__img:hover{
+
+}
+
+.DAMN__text--wrapper{
+width: 55%;
+margin-right: 1.3rem;
+}
+
+
+.DAMN__header{
+margin-inline: 1rem;
+font-size: clamp(2rem, 2.5rem, 2.7rem);
+color: red;
+font-family: monotype times new roman;
+font-weight: 700;
+}
+
+
+.DAMN__para{
+text-indent: 3%;
+margin-inline: 1rem;
+font-size: clamp(1rem, 1.2rem, 1.25rem);
+color: red;
+font-family: monotype times new roman;
+font-weight: 700;
+}
+
+.DAMN__ms{
+margin-inline: 1rem;
+font-size: clamp(1.2rem, 1.5rem, 1.5rem);
+color: red;
+font-family: monotype times new roman;
+font-weight: 700;
+}
+.DAMN__list{
+list-style-type:none;
+}
+
+.li__DAMN{
+color: red;
+font-family: monotype times new roman;
+font-weight: 700;
+}
+
+.songs__DAMN{
+color: red;
+font-family: 'monotype times' 'new roman';
+font-weight: 700;
+font-size: clamp(0.8rem, 1.5rem, 1.6rem);
+}
+
+@media(max-width:1148px) {
+ 
+  .row, #DAMN {
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+margin: 60px;
+}
+
+
+  .DAMN__img{
+  margin-bottom: 1rem;
+}
+
+
+  .DAMN__img--wrapper{
+width: 80%;
+height: auto;
+}
+
+
+.DAMN__text--wrapper{
+  width: 100%;
+  padding-bottom: 1rem;}
+
+
+}
+
+
+
+
+/*
+mr
+*/
+
+#mr{
+
+}
+
+
+.mr__img--wrapper{
+
+}
+
+.mr__img{
+
+}
+
+.mr__text--wrapper{
+
+}
+
+
+.mr__header{
+
+}
+
+
+.mr__para{
+
+}
+
+.mr__ms{
+
+}
+.mr_list{
+list-style-type:none;
+}
+
+.li{
+
+}
+
+/*
+gnx
+*/
+
+#gnx{
+
+}
+
+
+.gnx__img--wrapper{
+
+}
+
+.gnx__img{
+
+}
+
+.gnx__text--wrapper{
+
+}
+
+
+.gnx__header{
+
+}
+
+
+.gnx__para{
+
+}
+
+.gnx__ms{
+
+}
+.gnx__list{
+list-style-type:none;
+}
+
+.li{
+
+}
+
+/*
+related
+*/
+
+#related{
+
+}
+
+.related{
+  flex-wrap: wrap;
+}
+
+.related__img--wrapper{
+
+}
+
+.related__img{
+
+}
+
+.artists{
+  
+}
+
+/*
+footer
+*/
+
+.footer{
+
+}
+
+.footer__links{
+
+}
+
+
+.footer__para{
+
+}
